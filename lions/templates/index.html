@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>
+  Liosan
+  <small class="text-muted">Official</small>
+</h1>
+
+<div class="row">
+    {% for lion in lions%}
+      <p>&nbsp;
+
+     <div class="col">
+    </p>
+        <div class="card" style="width: 18rem;">
+            <img src="{{ lion.fig_url }}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{ lion.name}}</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Busy</a>
+            </div>
+        </div>
+    </div>
+
+    {% endfor %}
+
+</div>
+
+
+{% endblock %}
